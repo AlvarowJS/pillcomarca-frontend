@@ -1,0 +1,29 @@
+.local_logo {
+    width: 150px;
+    height: 150px;
+}
+
+.local_logo_portal {
+    width: 100px;
+    height: 70px;
+}
+.navbar__links{
+    /* color: red; */
+    color: black;
+    text-decoration: none;
+    outline: none;
+    
+}
+.links_local{
+    cursor: pointer;
+    background-color: skyblue;
+    color: white;
+    padding: 10px;
+}
+.navbar__link-active {
+    /* color: red; */
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}

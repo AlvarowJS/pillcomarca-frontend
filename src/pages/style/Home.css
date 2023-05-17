@@ -1,0 +1,21 @@
+.cards__local{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.cards__local section{
+    background-color: rgb(42, 125, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cards__local section i{
+    font-size: 80px;
+
+}
