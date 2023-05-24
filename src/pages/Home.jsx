@@ -3,9 +3,18 @@ import portada1 from './../assets/img/portada1.png'
 import portada2 from './../assets/img/portada2.jpg'
 import portada3 from './../assets/img/portada3.png'
 import './style/Home.css'
+import { useNavigate } from 'react-router-dom'
 const Home = () => {
+  const navigate = useNavigate()
+
   const sysdoc = () => {
     window.open('http://165.22.34.176/login')
+  }
+  const seguimientoTramite = () => {
+    window.open('http://165.22.34.176/tramite/seguimiento')
+  }
+  const sysdocSeguimiento = () => {
+    
   }
   return (
     <>
@@ -32,15 +41,19 @@ const Home = () => {
       </div>
 
       <div className='cards__local'>
-        <section>
-          <i className='bx bx-book' onClick={sysdoc}></i>
-          <h3>TRAMITE DOCUMENTARIO</h3>
+        <section onClick={sysdoc}>
+          <i className='bx bx-book'></i>
+          <h3>TRÁMITE DOCUMENTARIO</h3>
         </section>
-        <section>
+        <section onClick={sysdocSeguimiento}>
           <i className='bx bx-shield-alt-2'></i>
           <h3>SEGURIDAD CIUDADANA</h3>
         </section>
-
+        
+        <section onClick={seguimientoTramite}>
+          <i className='bx bx-search-alt-2'></i>
+          <h3>SEGUIMIENTO TRÁMITE</h3>
+        </section>
       </div>
     </>
   )
