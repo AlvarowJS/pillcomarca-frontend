@@ -1,0 +1,12 @@
+.convocatoria{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.convocatoria-card{
+    background-color: aquamarine;
+    outline: none;
+    text-decoration: none;
+    padding: 5px 10px
+}
