@@ -32,48 +32,73 @@ const Header = () => {
             id="templatemo_main_nav">
             <div className="flex-fill">
               <ul className="nav navbar-nav d-flex gap-3 mx-lg-auto">
-                <NavLink to='/'
-                  className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}
-                >
-                  <li className="nav-item">
+                <li className="nav-item">
+
+                  <NavLink to='/'
+                    className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}
+                  >
                     INICIO
-                  </li>
-                </NavLink>
+                  </NavLink>
+                </li>
 
-                <NavLink to='/documentos'
-                  // className="navlink_local"
-                  className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}
-                >
-                  <li className="nav-item">
-                    DOCUMENTOS <br /> DE GESTIÓN
-                  </li>
-                </NavLink>
 
-                <NavLink to='/noticias'
-                  className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}
-                >
-                  <li className="nav-item">
+                {/* DOcumentos */}
+
+                {/* fin documentos */}
+                <li className="nav-item dropdown">
+
+
+                  <li className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'} href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    DOCUMENTOS
+                  </li>
+
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <NavLink to='/documentos'
+                        // className="navlink_local"
+                        className={({ isActive }) => isActive ? 'navbar__link navbar__links mx-2' : 'navbar__links mx-2'}
+                      >
+
+                        Gestión
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to='/normativa'
+                        // className="navlink_local"
+                        className={({ isActive }) => isActive ? 'navbar__link navbar__links mx-2' : 'navbar__links mx-2'}
+                      >
+                        Normativa
+                      </NavLink>
+                    </li>
+                  </ul>
+
+                </li>
+
+                <li className="nav-item">
+
+                  <NavLink to='/noticias'
+                    className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}
+                  >
                     NOTICIAS
-                  </li>
-                </NavLink>
+                  </NavLink>
+                </li>
+                <li className="nav-item">
 
-                <NavLink to='/convocatorias'
-                  // className="navlink_local"
-                  className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}
-                >
-                  <li className="nav-item">
+                  <NavLink to='/convocatorias'
+                    // className="navlink_local"
+                    className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}
+                  >
                     CONVOCATORIAS
-                  </li>
-                </NavLink>
+                  </NavLink>
+                </li>
+                <li className="nav-item">
 
-                <NavLink to='/ubicanos'
-                  className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}
-                >
-                  <li className="nav-item">
+                  <NavLink to='/ubicanos'
+                    className={({ isActive }) => isActive ? 'navbar__link-active navbar__links' : 'navbar__links'}
+                  >
                     UBICANOS
-                  </li>
-                </NavLink>
-
+                  </NavLink>
+                </li>
 
               </ul>
             </div>
