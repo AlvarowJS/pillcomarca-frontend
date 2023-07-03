@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import TablaSeguridad from './TablaSeguridad'
 import DataTable from 'react-data-table-component'
-const URL = 'https://backend.munipillcomarca.gob.pe/api/v1/seguridad'
+const URL = 'http://127.0.0.1:8000/api/v1/seguridad'
 const SeguridadCiudadana = () => {
 
   const [seguridads, setSeguridads] = useState()

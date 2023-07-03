@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import DataTable from 'react-data-table-component'
-const URL = 'https://backend.munipillcomarca.gob.pe/api/v1/convocatoria'
+const URL = 'http://127.0.0.1:8000/api/v1/convocatoria'
 import './style.css'
 const TablaConvocatoria = () => {
 
