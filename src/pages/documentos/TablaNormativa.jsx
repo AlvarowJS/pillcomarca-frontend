@@ -2,13 +2,16 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import DataTable from 'react-data-table-component'
 const URL = 'https://backend.munipillcomarca.gob.pe/api/v1/documentonormativa'
-const TablaNormativa = () => {
+const TablaNormativa = ({ selectYear, selectedOption, search }) => {
+
 
     const [normativas, setNormativas] = useState()
 
     useEffect(() => {
         axios.get(URL)
-            .then(res => setNormativas(res.data))
+            .then(res => {
+                setNormativas(res.data)
+            })
             .catch(err => console.log(err))
     }, [])
 
