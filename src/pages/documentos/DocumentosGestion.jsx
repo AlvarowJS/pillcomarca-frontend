@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import CardGestion from './CardGestion'
-const URL = 'http://127.0.0.1:8000/api/v1/gestion'
+const URL = 'https://backend.munipillcomarca.gob.pe/api/v1/gestion'
 
 const DocumentosGestion = () => {
   const [documentos, setDocumentos] = useState()

@@ -67,7 +67,12 @@ const Normativa = () => {
         </div>
       </aside>
       <aside>
-        <TablaNormativa />
+        <TablaNormativa 
+          selectYear={selectYear}
+          selectedOption={selectedOption}
+          search={search}
+
+        />
       </aside>
     </>
   )
